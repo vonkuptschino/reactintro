@@ -34,7 +34,7 @@ const Person = ({stars, text}) =>
 
 const PersonList = () => {
  return data.users.map((user, i) => 
- 	<div>{i + 1}. <Person text={user.login} stars={user.login.length} /></div>)
+  <ul key={i}>{i + 1}. <Person text={user.login} stars={user.login.length} /></ul>)
 }
 
 
